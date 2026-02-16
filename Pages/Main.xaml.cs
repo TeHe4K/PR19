@@ -20,9 +20,24 @@ namespace Konevskii_PR19.Pages
     /// </summary>
     public partial class Main : Page
     {
+        public List<Classes.Item> items = new List<Classes.Item>();
         public Main()
         {
             InitializeComponent();
+
+            items.Add(new Classes.Item("Шкаф", 20000, ""));
+            LoadItems();
+
+        }
+
+        public void LoadItems()
+        {
+            parent.Children.Clear();
+            foreach(Classes.Item item in items)
+            {
+                parent.Children.Add(new Elements.Item(item));
+            }
+                
         }
     }
 }
