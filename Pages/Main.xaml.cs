@@ -25,7 +25,12 @@ namespace Konevskii_PR19.Pages
         {
             InitializeComponent();
 
-            items.Add(new Classes.Item("Шкаф", 20000, ""));
+            items.Add(new Classes.Item("Шкаф", 20000, "Shkaf.jpg"));
+            items.Add(new Classes.Item("Диван", 45000, "Divan.jpg"));
+            items.Add(new Classes.Item("Полка", 1700, "Polka.jpg"));
+            items.Add(new Classes.Item("Тумба", 6500, "Tymba.jpg"));
+            items.Add(new Classes.Item("Стул", 4300, "Styl.jpg"));
+            items.Add(new Classes.Item("Стол", 45000, "Stol.jpg"));
             LoadItems();
 
         }
